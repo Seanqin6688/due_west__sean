@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day2_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRP-ll-4Ka">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkt-k0-ebT">
+                                        <rect key="frame" x="139" y="137.5" width="97" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Igy-RN-Wr0"/>
+                                            <constraint firstAttribute="width" constant="97" id="sZq-GS-hHx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Screen Shot 2018-07-23 at 3.20.43 PM"/>
+                                        <connections>
+                                            <action selector="bottomcar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfw-dA-14v"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOe-bd-1qL">
+                                        <rect key="frame" x="50" y="50" width="19" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38670816292579058" green="0.3781111140498602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WOe-bd-1qL" firstAttribute="top" secondItem="kRP-ll-4Ka" secondAttribute="top" constant="50" id="8XM-Hm-NmL"/>
+                                    <constraint firstItem="Mkt-k0-ebT" firstAttribute="centerY" secondItem="kRP-ll-4Ka" secondAttribute="centerY" id="InI-AH-kfq"/>
+                                    <constraint firstItem="Mkt-k0-ebT" firstAttribute="centerX" secondItem="kRP-ll-4Ka" secondAttribute="centerX" id="uZN-xT-w9c"/>
+                                    <constraint firstItem="WOe-bd-1qL" firstAttribute="leading" secondItem="kRP-ll-4Ka" secondAttribute="leading" constant="50" id="wwf-PI-6Iz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-1c-yed">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX2-SM-wHF">
+                                        <rect key="frame" x="139" y="137.5" width="97" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="YTo-U6-K8I"/>
+                                            <constraint firstAttribute="height" constant="60" id="cfp-1d-GGZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Screen Shot 2018-07-23 at 3.20.43 PM"/>
+                                        <connections>
+                                            <action selector="topcar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpR-3u-69R"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47k-5p-2wx">
+                                        <rect key="frame" x="306" y="247.5" width="19" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.41249448002180811" blue="0.15451946522570326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AX2-SM-wHF" firstAttribute="centerX" secondItem="T4I-1c-yed" secondAttribute="centerX" id="67b-0e-5Nu"/>
+                                    <constraint firstAttribute="bottom" secondItem="47k-5p-2wx" secondAttribute="bottom" constant="50" id="Tf5-zD-Ya4"/>
+                                    <constraint firstAttribute="trailing" secondItem="47k-5p-2wx" secondAttribute="trailing" constant="50" id="fhj-gq-o8P"/>
+                                    <constraint firstItem="AX2-SM-wHF" firstAttribute="centerY" secondItem="T4I-1c-yed" secondAttribute="centerY" id="iIk-pz-0ir"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOn-6g-fIB">
+                                <rect key="frame" x="153" y="310.5" width="69" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qb-39-eyU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kRP-ll-4Ka" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3UL-Vm-9t6"/>
+                            <constraint firstItem="HOn-6g-fIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9AF-p9-Uac"/>
+                            <constraint firstItem="kRP-ll-4Ka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P9Q-e4-Ure"/>
+                            <constraint firstItem="kRP-ll-4Ka" firstAttribute="top" secondItem="T4I-1c-yed" secondAttribute="bottom" id="QzH-2g-VUL"/>
+                            <constraint firstItem="T4I-1c-yed" firstAttribute="height" secondItem="kRP-ll-4Ka" secondAttribute="height" id="VGT-JA-qdr"/>
+                            <constraint firstItem="T4I-1c-yed" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z38-2T-pX4"/>
+                            <constraint firstItem="HOn-6g-fIB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aqh-zx-oWy"/>
+                            <constraint firstItem="kRP-ll-4Ka" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bjd-Bc-gyp"/>
+                            <constraint firstItem="T4I-1c-yed" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gtl-td-04M"/>
+                            <constraint firstItem="T4I-1c-yed" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ysf-g9-Lii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomlabel" destination="WOe-bd-1qL" id="gYH-qI-IuT"/>
+                        <outlet property="toplabel" destination="47k-5p-2wx" id="vHe-MI-MNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.71875" y="133.0078125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2018-07-23 at 3.20.43 PM" width="617" height="368"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
